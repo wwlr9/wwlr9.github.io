@@ -85,6 +85,7 @@ $("#newnexts11").click(function(){
 $("#girl").click(function(){
   $("#hug").show();
   $("#kylo").hide();
+  $("#nexttogether").show();
 });
 
 $("#saving2").click(function(){
