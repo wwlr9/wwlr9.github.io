@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Mila</title>
+     <link rel="shortcut icon"href="M.jpeg">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <script src="Mila.js"></script>
+   <style>
+
+   body{
+     background-color:black;
+   }
+   .roombox{
+     position:absolute;
+     height:90%;
+     width:28%;
+     top:50%;
+     left:30%;
+     background-color:white;
+   }
+  #flames{
+    cursor:help;
+    color:red;
+    font-size:15px;
+  }
+
+  #vent{
+    width:100%;
+    height:100%;
+    opacity:1;
+  }
+
+  #R{
+    display:none;
+    width:100%;
+    height:100%;
+    opacity:1;
+  }
+
+  #final{
+    display:none;
+    width:100%;
+    height:100%;
+    opacity:1;
+  }
+
+  #hurt{
+    display:none;
+    width:100%;
+    height:100%;
+    opacity:1;
+  }
+
+     #sneak{
+       position: absolute;
+       color:black;
+       width:90%;
+       height:900px;
+       left:5%;
+       top:20%;
+       font-size:15px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:black;
+     }
+
+     #return{
+       display:none;
+       position: absolute;
+       color:black;
+       width:90%;
+       height:900px;
+       left:5%;
+       top:20%;
+       font-size:15px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:black;
+     }
+
+     #finaldecision{
+       display:none;
+       position: absolute;
+       color:black;
+       width:90%;
+       height:900px;
+       left:5%;
+       top:20%;
+       font-size:15px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:black;
+     }
+
+     #Mhead4{
+       position:absolute;
+       width:19%;
+       height:19;
+       top:6%;
+       left:5%;
+       border: solid black;
+       border-width:1.2px;
+     }
+
+     #room{
+       color:red;
+       cursor:help;
+     }
+
+     #nextsneak{
+       display:none;
+       cursor:pointer;
+     }
+
+     #floor{
+       color:red;
+       cursor:help;
+     }
+
+     #nextreturn{
+       cursor:pointer;
+     }
+
+     #nextfinal{
+       cursor:pointer;
+     }
+     #BE{
+       display:none;
+       position: absolute;
+       color:white;
+       width:85%;
+       height:100px;
+       left:50%;
+       top:500px;
+       font-size:30px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+       cursor:pointer;
+     }
+     #HE{
+       display:none;
+       position: absolute;
+       color:white;
+       width:85%;
+       height:100px;
+       left:50%;
+       top:800px;
+       font-size:30px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+       cursor:pointer;
+     }
+
+     </style>
+
+     </head>
+
+     <body>
+      <img id=final src="thehand4.png">
+      <img id=hurt src="hurt2.png">
+      <img id=R src="rrr2.png">
+      <img id=vent src="vent2.png">
+      <a id=HE href=HE.html>Tell him, “I am Mila”. </a>
+      <a id=BE href=BE.html>Run away. </a>
+      <div class="roombox"</div>
+        <img id=Mhead4 src="M.jpeg">
+
+
+      <div id=sneak>
+I lost my chip.
+I implanted a new one. And tonight, I will sneak into Kylo’s room.
+I should have waited until my hand fully recovered, but I couldn’t.
+Kylo might get my chip, which conceals my physiological information. Seems like he has not yet figured out the secret with that chip. If he had, I should have been caught.
+Or he did, but he does not want to catch me…?
+It is not the correct time for me to imagine.
+I don’t want to lose Kylo. And I don’t want to lose myself.
+I know he will finish his mission and return in an hour.<br>
+I entered via the vent. Kylo has a safe deposit box in his <span id=room>room</span>. I have seen it before.
+The right hand still hurts when I landed on the <span id=floor>floor</span>.
+Unlocking Kylo’s box is not difficult for me at all. I endured the pain and slowly opened it up.
+As I’d hoped, the chip is inside. I feel relieved.<br>
+        <span id=nextsneak>>></span>  </div><br>
+
+        <div id=return>
+  Suddenly,I hear someone speak.<br>
+  “I knew you would be here.”<br>
+  He is back!
+  How did he come back so early?
+  I really had bad luck during these days.
+  I turned to him, thinking about my next step.<br>
+  He stands at the door staring at me for a while. Then, as if resigning himself to fate, he gradually puts down the gun and throws it into the drawer.
+  Why? I have not done anything yet.
+  In the midst of my dilemma, I hear his voice.<br>
+  “I know that you are here for the chip. It is important for you. ”<br>
+  “I also know about your secret.”<br>
+  His expressions sound friendly. Does he give up catching me?
+  I look into his eyes, so genuinely, but I am flustered.
+  Has he already known everything? Is he waiting for me to tell me? Or is he trying to test me?
+<br>
+          <span id=nextreturn>>></span>  </div><br>
+
+          <div id=finaldecision>
+          Here comes to the time for me to make the final decision.<br>
+          The vent is close. Without the threats of the gun, I could escape. But, what happens then?<br>
+          If he has known who I am all this time, maybe if I just leave here, I will never see him again.<br>
+          I don’t want to give up all of my efforts, but I also don’t want to leave him. Although I know he is the police who tries to catch me, I did not leave him. I even benefit from our relationship by acquiring information about his deposit box and predicting his actions during my mission.<br>
+          For a long time, I’ve been deceiving him, exploiting him.<br>
+          What should I do?<br>
+            <span id=nextfinal>>></span>  </div><br>
+
+
+
+     </body>
+     </html>

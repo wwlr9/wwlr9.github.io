@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Mila</title>
+     <link rel="shortcut icon"href="M.jpeg">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <script src="Mila.js"></script>
+   <style>
+
+   body{
+     background-color:white;
+   }
+
+#kylo{
+  display:none;
+  background:white;
+  width:100%;
+  height:100%;
+}
+#hug{
+  display:none;
+  background:white;
+  width:100%;
+  height:100%;
+}
+
+#chipbackground{
+  display:none;
+  background:white;
+  width:100%;
+  height:100%;
+}
+
+.kylobox{
+  position:absolute;
+  height:80%;
+  width:40%;
+  top:20%;
+  left:7%;
+  background-color:black;
+  border: solid black;
+  border-width:1.2px;
+  opacity:0.95;
+}
+
+#Mhead2{
+  position:absolute;
+  width:15%;
+  height:15;
+  top:10%;
+  left:10%;
+  border: solid black;
+  border-width:1.2px;
+}
+#kylolove{
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#him{
+cursor:help;
+font-weight: bold;
+color:#F4408F;
+}
+
+#friend{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#nextkylolove{
+display: none;
+cursor:pointer;
+}
+
+#nextfriend{
+cursor:pointer;
+}
+
+#together{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#nexttogether{
+cursor:pointer;
+}
+
+#saving1{
+  cursor:pointer;
+  posirion:absolute;
+  font-size:20px;
+  display: none;
+  color:blue;
+  left:50;
+  top:50;
+}
+#saving2{
+  cursor:pointer;
+  posirion:absolute;
+  font-size:20px;
+  display: none;
+  color:white;
+  left:50;
+  top:50;
+}
+#saving3{
+  cursor:pointer;
+  posirion:absolute;
+  font-size:20px;
+  display: none;
+  color:red;
+  left:50;
+  top:50;
+}
+
+#newsaving3{
+  cursor:pointer;
+  posirion:absolute;
+  font-size:20px;
+  display: none;
+  color:red;
+  left:50;
+  top:50;
+}
+
+#s1{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#news1{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+#thatchip{
+cursor:pointer;
+font-size: 20px;
+font-weight: bold;
+color:#F4408F;
+}
+#newthatchip{
+cursor:pointer;
+font-size: 20px;
+font-weight: bold;
+color:#F4408F;
+}
+#nexts1{
+  display: none;
+cursor:pointer;
+}
+
+#s11{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+#news11{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#nexts11{
+cursor:pointer;
+}
+
+#newnexts11{
+cursor:pointer;
+}
+
+#s2{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#news2{
+  display: none;
+  position: absolute;
+  color:white;
+  width:85%;
+  height:900px;
+  left:10%;
+  top:30%;
+  font-size:15px;
+  font-family:Monaco;
+  text-align:left;
+  z-index:12;
+  border-color:black;
+}
+
+#nexts2{
+cursor:pointer;
+}
+
+#newnexts2{
+cursor:pointer;
+}
+
+
+#newnexts1{
+  display: none;
+cursor:pointer;
+}
+
+#girl{
+cursor:help;
+color:#F4408F;
+}
+
+     </style>
+
+     </head>
+
+     <body>
+      <img id=chipbackground src="thehand2.png">
+      <img id=hug src="hugscene.png">
+      <img id=kylo src="Kylo.png">
+      <div class="kylobox"</div>
+      <img id=Mhead2 src="M.jpeg">
+
+      <div id=kylolove>
+      Something was out of my control. <br>
+      I gradually developed <span id=him>feelings</span> for a police officer. His name is Kylo.<br>
+      I met him when he was on a mission, saving a staff member at my company who was hijacked by a gangster.<br>
+      Compared to his team members, he was relatively young and skinny, quite unnoticeable.<br>
+      But Kylo was the one giving the single shot to the gangster. From what I saw, he did not kill the gangster, and at the same time, that shot was enough for them to save the hostage. I was attracted by his kindness and skills.<br>
+      And the target fell. Everyone else rushed forward, except him. I looked at his back.<br>
+      When he turned around, we looked at each other.<br>
+      He smiled at me. My heart was racing.<br>
+      <span id=nextkylolove>>>></span>  </div><br>
+
+      <div id=friend>
+      We became good friends. I knew I should stay away from him. He was my natural enemy, but I could not resist. <br>
+      He told me he wanted to become the person who catches famous criminals.<br>
+      I had to encourage him. <br>
+      Yes, I had to encourage him. <br>
+      “There is no doubt that you could do it.”<br>
+      Violating my own will, I had to encourage him. I wanted to see his smile. <br>
+      I knew he would be successful. <br>
+      <span id=nextfriend>>>></span>  </div><br>
+
+      <div id=together>
+      <span id=saving1>saving1</span>
+      <span id=saving2>saving2</span>
+
+      <br>
+      <br>
+      <span id=t1>On that day, as I walked out of the company, he was waiting for me at the gate.<br>
+      The light shined on his face, and he frowned. But when he saw me, he showed me that smile again. Different from the past, that smile was more complicated in my eyes.<br>
+      Something was gonna happen.<br>
+      He hugged me and spoke.<br>
+      “Since today, I will be the one chasing that phantom thief “M”!”<br>
+      “Congratulations.”<br>
+      “And this newly appointed police officer really likes you. Could you be his <span id=girl>girlfriend</span>?”<br>
+      …<br>
+      “Yes.”<br>
+      I hugged him back.<br></span>
+      <span id=nexttogether>>>></span>
+
+      </div><br>
+
+
+      <div id=s1>
+        <br>
+        <br>
+I wanted to know how our relationship would progress under this new circumstance.
+Would he be assigned to another target if he keeps failing? Should I just wait until then? …How about just forget about him.
+……
+I can’t.
+After the accident, I chose to continue chasing my goal though I knew physiologically it seems implausible.
+By implanting that <span id=thatchip>chip</span>, I thought another door opened for me, and I would indeed catch it.
+To become a skilled thief and learn to disguise my identity, I tried everything.
+However, that accident was a sting hidden in my heart, making me so suspicious. I was afraid that suddenly, the chip would become functionless, and I would become useless.
+I never trusted myself. Rather, I trusted that chip.<br>
+<span id=nexts1>>>></span>
+
+</div><br>
+
+      <div id=s11>
+        <br>
+        <br>
+        I saw myself on Kylo.
+        He had a clear goal since the beginning. He worked hard to get the mission catching famous criminals.
+        But he was so different.
+        He always carried a positive attitude. Though he knew that catching M seemed implausible, he rarely showed me his disappointment when he failed his mission.
+        For all the time when we were together, I understood what happiness is.
+        Kylo was such a gentle person. He might notice the tender side of me. If I intended to evade, he never asks.
+        He always thanked me for encouraging him, but only I knew that I was not sincere.
+        I had become the hero I wished to be since I was young, but today I wasn’t enjoying myself that much.
+        I don’t know.
+        Am I restricted by my childhood dream or family responsibility? Is that really my lifetime goal? Is Kylo the person who brings me out of this cage?
+        Or do I just lose myself in this relationship and forget myself?  <span id=nexts11>>>></span>
+
+</div><br>
+
+<div id=s2>
+  <br>
+  <br>
+  I asked him, why do you want to catch M? Isn’t she doing something good just in an unusual way?
+  I felt his gaze and looked back.
+  He was silent.<br><span id=nexts2>>>></span>
+<br>
+</div><br>
+
+<div id=news2>
+  <br>
+  <br>
+  I asked him, why do you want to catch M? Isn’t she doing something good just in an unusual way?
+  I felt his gaze and looked back.
+  He was silent.<br><span id=newnexts2>>>></span>
+  <a id=saving3 href=saving3.html>Saving3</a>
+<br>
+</div><br>
+
+<div id=news1>
+  <br>
+  <br>
+I wanted to know how our relationship would progress under this new circumstance.
+Would he be assigned to another target if he keeps failing? Should I just wait until then? …How about just forget about him.
+……
+I can’t.
+After the accident, I chose to continue chasing my goal though I knew physiologically it seems implausible.
+By implanting that <span id=newthatchip>chip</span>, I thought another door opened for me, and I would indeed catch it.
+To become a skilled thief and learn to disguise my identity, I tried everything.
+However, that accident was a sting hidden in my heart, making me so suspicious. I was afraid that suddenly, the chip would become functionless, and I would become useless.
+I never trusted myself. Rather, I trusted that chip.<br>
+<span id=newnexts1>>>></span>
+
+</div><br>
+
+<div id=news11>
+  <br>
+  <br>
+  I saw myself on Kylo.
+  He had a clear goal since the beginning. He worked hard to get the mission catching famous criminals.
+  But he was so different.
+  He always carried a positive attitude. Though he knew that catching M seemed implausible, he rarely showed me his disappointment when he failed his mission.
+  For all the time when we were together, I understood what happiness is.
+  Kylo was such a gentle person. He might notice the tender side of me. If I intended to evade, he never asks.
+  He always thanked me for encouraging him, but only I knew that I was not sincere.
+  I had become the hero I wished to be since I was young, but today I wasn’t enjoying myself that much.
+  I don’t know.
+  Am I restricted by my childhood dream or family responsibility? Is that really my lifetime goal? Is Kylo the person who brings me out of this cage?
+  Or do I just lose myself in this relationship and forget myself?  <span id=newnexts11>>>></span>
+  <a id=newsaving3 href=saving3.html>Saving3</a>
+
+</div><br>
+
+     </body>
+     </html>

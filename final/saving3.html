@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Mila</title>
+     <link rel="shortcut icon"href="M.jpeg">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <script src="Mila.js"></script>
+   <style>
+
+   body{
+     background-color:black;
+   }
+
+
+   .saving3box{
+     position:absolute;
+     height:40%;
+     width:40%;
+     top:20%;
+     left:7%;
+     background-color:black;
+     border: solid black;
+     border-width:1.2px;
+   }
+
+     #trap{
+       position: absolute;
+       color:white;
+       width:85%;
+       height:900px;
+       left:10%;
+       top:150px;
+       font-size:13px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+     }
+
+     #darkness{
+       display:none;
+       position: absolute;
+       color:white;
+       width:85%;
+       height:900px;
+       left:10%;
+       top:150px;
+       font-size:13px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+     }
+
+     #band{
+       display:none;
+       position: absolute;
+       color:white;
+       width:85%;
+       height:900px;
+       left:10%;
+       top:150px;
+       font-size:13px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+     }
+
+     #thanks{
+       display:none;
+       position: absolute;
+       color:black;
+       width:85%;
+       height:900px;
+       left:10%;
+       top:150px;
+       font-size:13px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+     }
+
+     #agitate{
+       display:none;
+       position: absolute;
+       color:black;
+       width:85%;
+       height:900px;
+       left:10%;
+       top:150px;
+       font-size:13px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+     }
+
+     #d1{
+       display:none;
+       position: absolute;
+       color:white;
+       width:85%;
+       height:100px;
+       left:10%;
+       top:150px;
+       font-size:30px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+       cursor:pointer;
+     }
+
+     #d2{
+       display:none;
+       position: absolute;
+       color:white;
+       width:85%;
+       height:100px;
+       left:10%;
+       top:500px;
+       font-size:30px;
+       font-family:Monaco;
+       text-align:left;
+       z-index:12;
+       border-color:white;
+       cursor:pointer;
+     }
+
+#sfire{
+  width:100%;
+  height:100%;
+  opacity:1;
+}
+
+#ceiling2{
+  display:none;
+  width:100%;
+  height:100%;
+  opacity:1;
+}
+
+#save2{
+  display:none;
+  width:100%;
+  height:100%;
+  opacity:1;
+}
+
+#save3{
+  display:none;
+  width:100%;
+  height:100%;
+  opacity:1;
+}
+
+#blood{
+  display:none;
+  width:100%;
+  height:100%;
+  opacity:1;
+}
+
+#Mhead3{
+  position:absolute;
+  width:15%;
+  height:15;
+  top:10%;
+  left:10%;
+  border: solid black;
+  border-width:1.2px;
+}
+
+#nexttrap{
+cursor:pointer;
+}
+
+#righthand{
+cursor:help;
+color:red;
+}
+
+#nextdarkness{
+  display:none;
+cursor:pointer;
+}
+
+#redband{
+cursor:help;
+color:red;
+}
+
+#nextband{
+  display:none;
+cursor:pointer;
+}
+
+#nextthanks{
+cursor:pointer;
+}
+
+#nextagitate{
+cursor:pointer;
+}
+
+     </style>
+
+     </head>
+
+     <body>
+       <img id=blood src="blood.png">
+      <img id=save3 src="save3.png">
+      <img id=save2 src="save2.png">
+      <img id=ceiling2 src="ce2.png">
+      <img id=sfire src="fire.png">
+
+        <a id=d1 href=Room1.html>I gradually realize that I want to give myself freedom.</a>
+
+        <a id=d2 href=Room2.html>I have not yet decided what to do...</a>
+
+      <div class="saving3box"</div>
+      <img id=Mhead3 src="M.jpeg">
+
+
+
+      <div id=trap>
+The smoke rises. I was trapped.
+This hypocritical curator really wants to take my life.
+The flame is around me. But I am losing my strength.
+My right hand was hit during the confrontation with the guardians. It no longer obeys my will. That makes my situation even harder.<br>
+…<br>
+<span id=nexttrap>>>></span>
+</div><br>
+
+<div id=darkness>
+  In the darkness, I felt a massive pain in my <span id=righthand>right hand</span>. I woke up.
+  I saw Kylo. He is trying to wrap the bandage around my hand.
+  “I am sorry.”<br>
+<span id=nextdarkness>>>></span>
+</div><br>
+
+<div id=band>
+He holds my wrist cautiously with his left hand. His fingers are fixing the <span id=redband>bandage</span> on my right hand.
+I realized that I was staring blankly at his finger joints.
+I vigilantly looked at his eyes, trying to take my hand back and run away.<br>
+“Hey, be careful. I just did some emergency treatment. ”<br>
+<span id=nextband>>>></span>
+</div><br>
+
+<div id=thanks>
+  “I won’t catch you today. They should not try to kill you.”<br>
+  He looks so serious. And…seems like that he is enduring something…
+  Blood oozed out of his back, turned his uniform into red.
+  I understood what happened. He saved me and brought me to this place, and he was also injured.
+  “Thanks.” I should not speak too much. I should have as little contact with him as possible.<br>
+  But I continued. “You got hurt.” <span id=nextthanks>>>></span>
+</div><br>
+
+<div id=agitate>
+  “Take a rest, and you can leave.” He avoided my concern and walked away.<br>
+  Is he fine? Did he see through my identity under this mask?
+  I stopped thinking and immediately left.
+  There is something more urgent to do. I need to return and check my hand. What if I lose my hand again? I was agitated.<br>
+<span id=nextagitate>>>></span>
+</div><br>
+
+
+
+
+
+     </body>
+     </html>
