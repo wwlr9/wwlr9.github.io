@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head>
+  <title>The UPS</title>
+  
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="ml5.min.js"></script>
+<script type="text/javascript" src="simplepeer.min.js"></script>
+  <script type="text/javascript" src="socket.io.js"></script>
+  <script type="text/javascript" src="p5livemedia.js"></script>
+  <script src="path/to/p5.sound.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+<style>
+  body{
+    background-color:black;
+    font-family:Courier New;
+  }
+  
+  #next{
+  position:absolute;
+  color:white;
+  left:5%;
+  font-size:30px;
+  cursor:pointer;
+}
+
+  #textinfo{
+  position:absolute;
+  left:10%;
+  top:10%;
+  width:80%;
+  font-size:30px;
+  color:white;
+  visibility:visible;
+}
+  #success{
+  font-size:30px;
+  color:white;
+  }
+  
+  #proteins{
+  position:absolute;
+  font-size:30px;
+  left:10%;
+  top:15%;
+  color:white;
+  visibility:hidden;
+  }
+  
+  #resource{
+  position:absolute;
+  font-size:15px;
+  left:10%;
+  top:120%;
+  color:white;
+  }
+  
+  
+  </style></head>
+  
+
+  
+<body>
+  <div id="textinfo"></div>
+  <div id="next">Click to start background information</div>
+  <div id="success"></div>
+  <div id="proteins"><img src="E3ligasecolor.png">A ubiquitin ligase brings the -this protein needs to be cleared- tag to the target, so proteasome knows where to go. <br><img src="Procolor.png">A proteasome degrades unneeded and damaged proteins which are tagged with -clear me-.</div>
+  <div id="resource">Proteins structures from:<br>Ubiquitin ligase:https://www.rcsb.org/structure/2LGV<br>Proteasome:https://www.rcsb.org/structure/6WJN<br>Tau aggregates:https://www.rcsb.org/structure/5ZIA</div>
+
+  <script src="sketch.js"></script>
+  <script src="script.js"></script>
+
+
+</body></html>
