@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
   <title>The UPS</title>
-  
+
   <script src="p5.js"></script>
   <script src="p5.sound.min.js"></script>
   <script src="ml5.min.js"></script>
@@ -16,7 +16,7 @@
     background-color:black;
     font-family:Courier New;
   }
-  
+
   #next{
   position:absolute;
   color:white;
@@ -34,20 +34,17 @@
   color:white;
   visibility:visible;
 }
-  #success{
-  font-size:30px;
-  color:white;
-  }
-  
+
   #proteins{
   position:absolute;
   font-size:30px;
   left:10%;
   top:15%;
+  width:80%;
   color:white;
   visibility:hidden;
   }
-  
+
   #resource{
   position:absolute;
   font-size:15px;
@@ -55,19 +52,25 @@
   top:120%;
   color:white;
   }
-  
-  
-  </style></head>
-  
 
-  
+  #success{
+  position:absolute;
+  font-size:30px;
+  left:30%;
+  top:16%;
+  color:white;
+  }
+
+  </style></head>
+
+
+
 <body>
   <div id="textinfo"></div>
   <div id="next">Click to start background information</div>
-  <div id="success"></div>
   <div id="proteins"><img src="E3ligasecolor.png">A ubiquitin ligase brings the -this protein needs to be cleared- tag to the target, so proteasome knows where to go. <br><img src="Procolor.png">A proteasome degrades unneeded and damaged proteins which are tagged with -clear me-.</div>
   <div id="resource">Proteins structures from:<br>Ubiquitin ligase:https://www.rcsb.org/structure/2LGV<br>Proteasome:https://www.rcsb.org/structure/6WJN<br>Tau aggregates:https://www.rcsb.org/structure/5ZIA</div>
-
+  <div id="success"></div>
   <script src="sketch.js"></script>
   <script src="script.js"></script>
 
