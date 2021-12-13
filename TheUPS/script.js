@@ -69,7 +69,7 @@ function getText(){
   document.getElementById("textinfo").textContent = textsArr[i];
 }
 
-if (triggernum = 1 ||triggernum = 2triggernum = 3 ||triggernum = 4 ||triggernum = 5){
+if (triggernum == 1 ||triggernum == 2 || triggernum == 3 || triggernum == 4 || triggernum == 5){
 triggersou = document.getElementById("triggersou");
 triggersou.play();
 }
