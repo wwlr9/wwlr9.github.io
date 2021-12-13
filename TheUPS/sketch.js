@@ -23,8 +23,9 @@ let degradetint5 = 255;
 let prevPixels = [];
 
 let start = 0;
-let triggersou;
-let clearsou;
+
+let triggernum = 0;
+let clearnum = 0;
 
 function modelReady() {
   console.log('hand pose loaded');
@@ -164,27 +165,31 @@ function e3Move(){
         if(d1<50+70){
           Tautint1 = 0;
           console.log('ub');
-
+          triggernum = 1;
         }
         var d2 = dist(x+20,y-70, width-200+50,height/7+50);
         if(d2<50+70){
           Tautint2 = 0;
            console.log('ub');
+           triggernum = 2;
         }
         var d3 = dist(x+20,y-70, width/8+50,height-100+50);
         if(d3<50+70){
           Tautint3 = 0;
            console.log('ub');
+           triggernum = 3;
         }
         var d4 = dist(x+20,y-70, width-100+50,height/3+50);
         if(d4<50+70){
           Tautint4 = 0;
           console.log('ub');
+          triggernum = 4;
         }
         var d5 = dist(x+20,y-70, width/70+50,height/20+50);
         if(d5<50+70){
           Tautint5 = 0;
           console.log('ub');
+          triggernum = 5;
         }
       }
     }

@@ -13,7 +13,7 @@ let textsArr = [startit,backgroundkn,game,document.getElementById("proteins").te
 let i=0;
 
 var audio;
-
+var triggersou;
 //Snsynthesis
 const speak = text =>{
   let utterThis = new SpeechSynthesisUtterance(text);
@@ -67,4 +67,9 @@ document.querySelector('#next').onclick = () => {
 
 function getText(){
   document.getElementById("textinfo").textContent = textsArr[i];
+}
+
+if (triggernum = 1 ||triggernum = 2triggernum = 3 ||triggernum = 4 ||triggernum = 5){
+triggersou = document.getElementById("triggersou");
+triggersou.play();
 }
