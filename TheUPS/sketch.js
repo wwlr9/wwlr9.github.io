@@ -32,10 +32,10 @@ function modelReady() {
 }
 
 function preload() {
-  proteasome = loadImage('Procolor.png');
-  E3 = loadImage('E3ligasecolor.png');
-  TAUp = loadImage('TAU.png');
-  degrade = loadImage('degrade.png');
+  proteasome = loadImage('proteasome.png');
+  E3 = loadImage('E3ligase1.png');
+  TAUp = loadImage('taubefore.png');
+  degrade = loadImage('tauafter.png');
 
 }
 
