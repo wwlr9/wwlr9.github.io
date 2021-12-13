@@ -13,7 +13,8 @@ let textsArr = [startit,backgroundkn,game,document.getElementById("proteins").te
 let i=0;
 
 var audio;
-var triggersou;
+// var triggersou;
+
 //Snsynthesis
 const speak = text =>{
   let utterThis = new SpeechSynthesisUtterance(text);
@@ -69,7 +70,7 @@ function getText(){
   document.getElementById("textinfo").textContent = textsArr[i];
 }
 
-if (triggernum == 1 ||triggernum == 2 || triggernum == 3 || triggernum == 4 || triggernum == 5){
-triggersou = document.getElementById("triggersou");
-triggersou.play();
-}
+// if (triggernum == 1 ||triggernum == 2 || triggernum == 3 || triggernum == 4 || triggernum == 5){
+// triggersou = document.getElementById("triggersou");
+// triggersou.play();
+// }
