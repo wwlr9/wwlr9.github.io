@@ -61,11 +61,18 @@
   color:white;
   }
 
+  #music{
+      position:absolute;
+      top:20%;
+      visibility: hidden;
+  }
+
   </style></head>
 
 
 
 <body>
+  <div id="music"><audio controls src="audio.wav"></audio><div>
   <div id="textinfo"></div>
   <div id="next">Click to start background information</div>
   <div id="proteins"><img src="E3ligase1.png">A ubiquitin ligase brings the -this protein needs to be cleared- tag to the target, so proteasome knows where to go. <br><img src="proteasome.png">A proteasome degrades unneeded and damaged proteins which are tagged with -clear me-.</div>
@@ -73,6 +80,7 @@
   <div id="success"></div>
   <script src="sketch.js"></script>
   <script src="script.js"></script>
+
 
 
 </body></html>
